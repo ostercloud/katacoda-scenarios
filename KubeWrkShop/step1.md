@@ -4,7 +4,8 @@ In this scenario you will create a manifest that will deploy a single pod that w
 - Start a container that will clone a git repo to the volume before starting the nginx container
 
 Click the code below to copy to the file editor:
-`apiVersion: v1
+<pre class="file" data-target="clipboard">
+apiVersion: v1
 kind: Pod
 metadata:
   labels:
@@ -31,9 +32,9 @@ spec:
       name: www-data
   volumes:
   - name: www-data
-    emptyDir: {}`{{copy}}
-    
+    emptyDir: {}
+</pre>    
   Save this as a file named pod.yml
     
  Next, you can apply that manifest file with this command:
- `kubectl apply -f pod.yml'{{execute}}
+ `kubectl apply -f pod.yml` {{execute}}
