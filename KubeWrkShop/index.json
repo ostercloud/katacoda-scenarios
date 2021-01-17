@@ -26,6 +26,7 @@
     }
   },
   "environment": {
+    "hidefinish": true,
     "uilayout": "vscode-terminal-split"
   },
   "backend": {
