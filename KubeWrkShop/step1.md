@@ -33,8 +33,7 @@ spec:
   volumes:
   - name: www-data
     emptyDir: {}
-</pre>    
-  Save this as a file named pod.yml
+</pre>
     
  Next, you can apply that manifest file with this command:
  `kubectl apply -f pod.yml` {{execute}}
