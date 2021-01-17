@@ -4,7 +4,7 @@ In this scenario you will create a manifest that will deploy a single pod that w
 - Start a container that will clone a git repo to the volume before starting the nginx container
 
 Click the code below to copy to the file editor:
-<pre class="file" data-target="clipboard">
+<pre class="file" data-filename="pod.yml" data-target="insert">
 apiVersion: v1
 kind: Pod
 metadata:
