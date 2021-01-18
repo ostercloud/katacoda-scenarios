@@ -36,4 +36,4 @@ spec:
 </pre>
     
  Next, you can apply that manifest file with this command:
- `kubectl apply -f pod.yml` {{execute}}
+ `kubectl apply -f pod.yml`{{execute}}
