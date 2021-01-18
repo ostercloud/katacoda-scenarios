@@ -37,3 +37,9 @@ spec:
     
  Next, you can apply that manifest file with this command:
  `kubectl apply -f pod.yml`{{execute}}
+ 
+ If you want to check that the containers are running and that the git repo was cloned sucessfully, 
+ This command will show the IP address for the pod: `kubectl get pod myapp -o wide`{{execute}}
+ 
+ A simple curl request to that address should return "This is test data from Github Repo"
+ 
