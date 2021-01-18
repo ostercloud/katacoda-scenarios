@@ -42,3 +42,11 @@ spec:
          - name: www-data
            emptyDir: {}
 </pre>
+
+ Next, you can apply that manifest file with this command:
+ `kubectl apply -f replica.yml`{{execute}}
+ 
+ Try exploring th running pods and get information about your newly created ReplicaSet
+ `kubectl get pods`{{execute}}
+ `kubectl get rs/myapp-frontend -o wide`{{execute}}
+ `kubectl describe rs/myapp-frontend`{{execute}}
