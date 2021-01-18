@@ -1,7 +1,7 @@
 In this scenario we will create a replica set that will allow us to scale our pod across multiple nodes. This will also cause our app to be more fault tolerant as a pod will be recreated if it goes down. 
 
 Here is the manifest file for our ReplicaSet, click copy to editor to create the file. 
-<pre class="file" data-filename="pod.yml" data-target="insert">
+<pre class="file" data-filename="replica.yml" data-target="insert">
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
